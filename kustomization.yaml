@@ -1,0 +1,6 @@
+namespace: kube-logging-v1
+
+bases:
+- elasticsearch
+- kibana
+- fluentd
