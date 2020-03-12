@@ -1,4 +1,4 @@
-namespace: kube-logging-v1
+namespace: kube-logging
 
 bases:
 - elasticsearch
