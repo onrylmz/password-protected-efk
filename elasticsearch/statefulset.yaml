@@ -17,11 +17,11 @@ spec:
       - name: elasticsearch
         image: docker.elastic.co/elasticsearch/elasticsearch:6.8.6
         imagePullPolicy: IfNotPresent
-        # Add post start lifecycle to add elasticsearch user
-        lifecycle:
-          postStart:
-           exec:
-            command: ["/bin/sh", "-c", "/usr/share/elasticsearch/bin/elasticsearch-users useradd esUser -p esPassword -r superuser"]
+        # Post start lifecycle to add elasticsearch user
+        # lifecycle:
+        #  postStart:
+        #   exec:
+        #    command: ["/bin/sh", "-c", "/usr/share/elasticsearch/bin/elasticsearch-users useradd esUser -p esPassword -r superuser"]
         env:
         - name: discovery.type
           value: single-node

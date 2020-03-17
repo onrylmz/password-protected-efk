@@ -1,3 +1,5 @@
+namespace: kube-logging
+
 resources:
 - deployment.yaml
 - service.yaml

@@ -5,5 +5,5 @@ metadata:
   labels:
     component: fluentd
 data:
-  elasticsearch_username: esUser
-  elasticsearch_password: esPassword
+  elasticsearch_username: elastic
+  elasticsearch_password: ELASTIC_PASSWORD # it needs to be changed
